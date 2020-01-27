@@ -1,0 +1,692 @@
+/***SET UP Stylings***/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+/*** GENERAL Styling: ***/
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/*** HEADER styling ***/
+
+header {
+    background-image: url(./shutter-assets/asset-1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.hamburger-icon:hover,
+li a:hover,
+.contact-info a:hover, 
+.hamburger-icon:focus,
+li a:focus,
+.contact-info a:focus {
+    color: #E7A8E6;
+}
+
+.primary-welcome {
+    margin-bottom: 180px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.capitalize,
+.shutter {
+    display: inline-block;
+    width: 100%;
+}
+
+.capitalize {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.shutter {
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;
+    line-height: 6.5rem;
+}
+
+header h2 {
+    font-size: 3rem;
+    float: left;
+    margin: 0.5% 10% 0 10%;
+    padding: 0;
+}
+
+header nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    margin-right: 10%;
+}
+
+header ul,
+.capitalize {
+    text-transform: uppercase;
+}
+
+.header-nav {
+    font-size: 1.25rem;
+}
+
+.header-nav li {
+    float: left;
+    padding: 3%;
+}
+
+.list-wrapper {
+    width: 33%;
+}
+
+.icon-wrapper {
+    clear: both;
+}
+
+.icon-wrapper ul {
+    float: right;
+    margin: 22% 4.3% 0 0;
+}
+
+.icon-wrapper li {
+    font-size: 1.5rem;
+    padding: 30%;
+    float: both;
+}
+
+/*** ABOUT Styles ***/
+
+.content-container {
+    text-align: center;
+    background-color: #F0F5FF;
+    padding: 5% 0;
+}
+
+.content-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content-container p {
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.8);
+    font-size: 1.125rem;
+    line-height: 20px;
+    padding: 0 25%;
+}
+
+/*** GALLERY Styles ***/
+
+.gallery li {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 2%;
+}
+
+
+/*** BLOG Styles ***/
+
+.wrapper {
+    margin: 70px 10%;
+}
+
+.blog {
+    background-image: url(./shutter-assets/asset-5.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.blog-nav {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.blog-nav h3 {
+    margin-bottom: 0;
+}
+
+.blog-nav ul {
+    padding: 0 10%;
+}
+
+
+.blog-nav li {
+    float: left;
+    margin: 5% 2%;
+    text-align: center;
+    width: 20%;
+}
+
+.blog-nav nav {
+    clear: both;
+}
+
+.blog-post-photo-1 {
+    float: left;
+    width: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blog-post-photo-2 {
+    float: right;
+    width: 50%;
+}
+
+.blog-post-photo-3 {
+    float: left;
+    width: 50%;
+    clear: both;
+}
+
+.white-space {
+    display: block;
+}
+
+
+/*** BLOG POST 1 Styles ***/
+
+.blog-post-1 {
+    width: 100%;
+}
+
+.blog-content h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+    margin-bottom: 0;
+}
+
+.blog-post-1 button,
+.blog-post-2 button {
+    margin-top: 0.9rem;
+}
+
+.blog-content {
+    width: 75%;
+    float: right;    
+    padding-left: 20px;
+}
+
+.blog-post-content-2,
+.blog-post-content-2b {
+    text-align: center;
+    width: 50%;
+}
+
+.blog-post-content-2 {
+    float: left;
+    text-align: right;
+    padding: 5% 7% 0 24%;
+}
+
+.blog-post-content-2b {
+    float: right;
+    text-align: left;
+    padding: 5% 24% 0 7%;
+}
+
+.blog-post-content-2b h3 {
+    clear: both;
+}
+
+.blog-post-1 p, 
+.blog-post-2 p {
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.8);
+    font-size: 1.25rem;
+    line-height: 20px;
+}
+
+.blog-post-1 h3,
+.blog-post-2 h3 {
+    font-size: 2rem;
+}
+
+/*** BLOG POST 2 Styles ***/
+
+.blog-post-2 {
+    background-color: #F0F5FF;
+}
+
+button {
+    color: 232323;
+    padding: 5px 25px;
+    background-color: #E7A8E6;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 29px;
+    border: none;
+}
+
+/*** .CONTACT Styles ***/
+
+.contact-wrapper {
+    color: white;
+    background-color: #232323;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    padding: 50px 10%;
+}
+
+.contact h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    width: 20%;
+    float: left;
+    text-align: left;
+    line-height: 1rem;
+}
+.contact-info,
+.nav-contact {
+    margin-top: -100px;
+}
+
+.subscribe {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    float: revert;
+}
+
+/*** "Float: revert" compliments of my pal Lucas, who shared the idea with a few of us on our shutter slack channel. :)***/
+
+input {
+    padding: 9px 15%;
+    border: none;
+}
+
+input#userEmail {
+    padding-left: 25px;
+    padding-right: 150px;
+    margin-right: -2px;
+}
+
+/* 
+I tried removing all borders and playing around with a million things, but utimately could only get negative margins to work. Would love to know if there was a smarter way! ...I'm sure there was!  */
+
+form button {
+    padding: 2px 20px;
+}
+
+.nav-contact {
+    width: 20%;
+    float: right;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-contact h4 {
+    margin-bottom: -10px;
+}
+/* 
+Same as above... I tried removing all borders and playing around with a million things, but utimately could only get negative margins to work. Would love to know if there was a smarter way! ...I'm sure there was!  */
+
+.nav-contact ul {
+    padding: 0;
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.visually-hidden:not(:focus):not(:active) { 
+    position: absolute;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; 
+}
+
+/*** FOOTER styles ***/
+
+footer {
+    background-color: black;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    font-size: 1.25rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+
+@media (max-width: 1020px) {
+    .blog-post-2 button {
+        font-size: 2rem;
+        padding: 10px 30px;
+    }
+
+    .blog-post-photo-2 {
+    float: right;
+    width: 50%;
+    }
+
+    .blog-post-photo-3 {
+        float: left;
+        width: 50%;
+        clear: both;
+    } 
+
+    .blog-post-2 p {
+        font-size: 1.75rem;
+        line-height: 27px;
+        padding-right: 5%;
+    }
+
+    .blog-post-photo-2,
+    .blog-post-photo-3 {
+        width: 100%;
+    }
+
+    .blog-post-content-2,
+    .blog-post-content-2b {
+        width: 100%;
+        text-align: center;
+        padding: 5% 10% 10%;
+    }
+
+    .blog-post-content-2 h3,
+    .blog-post-content-2b h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .header-nav li {
+        float: none;
+        text-align: right;
+    }
+    .content-container {
+        padding: 1% 0 10% 0;
+    }
+    .content-container h2 {
+        font-size: 4rem;
+    }
+    .content-container p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        padding: 0 10%;
+        margin-bottom: 5%;
+    }
+
+    .blog-nav {
+        padding-top: 15px;
+    }
+
+    .blog-nav li {
+        margin: 3% 2%;
+    }
+
+    .blog-post-1 button {
+        font-size: 2rem;
+        padding: 10px 30px;
+        margin: 7% 30% 7% 35%
+    }
+
+    .gallery-photos {
+        margin: 0;
+    }
+
+    .gallery li:last-child {
+        display: none;
+    }
+
+    .gallery li {
+        width: calc(100% / 2);
+        padding: 0;
+        margin-bottom: -23px;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    .blog {
+        background: #1F2022;
+    }
+
+    .blog-nav ul {
+        padding-bottom: 5%;
+    }
+
+    .blog-nav li {
+        float: none;
+        width: 100%;
+        font-size: 2.75rem;
+        padding-top: 35px;
+    }
+
+    .blog-nav li i {
+        font-size: 4rem;
+    }
+
+    .blog-nav h3 {
+        margin-top: 15px;
+    }
+
+    .blog-post-photo-1 {
+        float: none;
+        width: 77%;
+        margin: 13% 13% 0 13%;
+    }
+
+    .blog-content {
+        float: none;
+        width: 90%;
+        margin: 0 5%;
+        text-align: justify;
+    }
+
+    .blog-content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .blog-post-1 p { 
+        font-size: 1.75rem;
+        line-height: 27px;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 720px) {
+    .blog-post-1 button {
+        margin: 5% 23% 12% 23%;
+    }
+}
+
+@media (max-width: 675px) {
+    .subscribe {
+        float: none;
+        width: 90%;
+    }
+
+    .subscribe h4 {
+        margin-bottom: 7px;
+    }
+
+    .contact-wrapper {
+        padding: 15px 10%;
+    }
+
+    .contact h4 {
+        font-size: 2.5rem;
+    }
+
+    .contact p {
+        font-size: 1.75rem;
+        margin-top: 8px;
+    }
+
+    .contact-info a {
+        line-height: 2.25rem;
+    }
+
+    input#userEmail {
+        font-size: 1.75rem;
+        padding: 15px 33px 15px 115px;
+    }
+
+    form button {
+        margin-top: 10px;
+        font-size: 1.75rem;
+        padding: 10px 127px;
+        margin-bottom: 10px;
+    }
+
+    .contact-wrapper {
+        padding-bottom: 25px;
+    }
+
+    .contact-info,
+    .nav-contact {
+        width: 50%;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.25rem;
+        margin: 0;
+    }
+
+    .nav-contact li {
+        line-height: 2.75rem;
+    }
+
+    footer {
+        font-size: 1.75rem;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-nav li,
+    .icon-wrapper li {
+        display: none;
+    }
+
+    .hamburger-icon {
+        color: white;
+        display: unset;
+        font-size: 3rem;
+        float: right;
+        margin-top: 3px;
+        margin-right: 4%;
+    }
+
+    .content-container h2 {
+        font-size: 5rem;
+    }
+
+    .content-container p {
+        font-size: 2rem;
+    }
+
+    .content-container button {
+        font-size: 1.75rem;
+        padding: 10px 35px;
+    }
+
+    .blog-post-1 p, 
+    .blog-post-2 p {
+        line-height: 28px;
+        padding-right: 0 10%;
+    }
+}
+
+@media (max-width: 470px) {
+    .blog-post-1 button {
+        margin: 5% 15% 12% 15%;
+    }
+}
+
+@media (max-width: 445px) {
+    input#userEmail {
+        padding: 15px;
+    }
+    form button {
+        padding: 10px 68px;
+    }
+}
+
+@media (max-width: 370px) {
+    .shutter {
+        font-size: 8.5rem;
+    }
+
+    .hamburger-icon {
+        margin-right: 5%;
+    }
+
+    .blog-post-1 button {
+        margin: 5% 8% 12% 8%;
+    }
+}
